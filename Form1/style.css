@@ -1,0 +1,81 @@
+body{
+    margin: 1% 20%;
+    border: 2px solid black;
+    font-weight: bolder;
+    font-family: Verdana;
+}
+header{
+    height: 6vh;
+}
+.logo{
+    border: 2px solid black;
+    float: left;
+    padding: 1%;
+}
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+    margin-top: 1%;
+    float: right;
+}
+li{
+    display: inline;
+    margin: 0px;
+}
+.bannerIMG{
+    border: 2px solid black;
+    height: 15vh;
+    text-align: center;
+}
+.order{
+    border: 2px solid black;
+    height: 5vh;
+    text-align: center;
+}
+table , th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+table, th ,td{
+    float: right;
+}
+.con1{
+    margin: 5px;
+    margin-right: 20%;
+    overflow: hidden;
+}
+.content{
+    padding-left: 30%;
+}
+.bags{
+    /*display: flex;*/
+    margin: 5px;
+    margin-right: 20%;
+    overflow: hidden;
+}
+.address{
+    margin-right: 20%;
+    overflow: hidden;
+}
+p{
+    float: left;
+}
+.text-box{
+    margin-top: 2vh;
+    float: right;
+}
+.comments{
+    text-align: left;
+    width: 500px;
+    overflow: hidden;
+}
+textarea{
+    width: 400px;
+    height: 100px;
+}
+button{
+    border-radius: 0px;
+    margin: 10px 0px;
+}
