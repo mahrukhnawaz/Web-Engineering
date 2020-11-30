@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Counter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        console.log("I AM IN!");
+        $(document).ready(function(){
+            $("#screen").val(0);
+            // RESET
+            $("#reset").click(function(){
+                document.getElementById("screen").value = 0;
+            });
+            // INCREMENT
+            $("#increment").click(function(event){
+                event.preventDefault();
+                var value_ = parseInt(document.getElementById("screen").value);
+                console.log(`${value_}`);
+                if(isNaN(value_)){
+                    alert("Invalid input!");
+                }
+                else{
+                    value_++;
+                    $("#screen").val(`${value_}`);
+                }
+            });
+            // DECREMENT
+            $("#Decrement").click(function(event){
+                event.preventDefault();
+                var value_ = parseInt(document.getElementById("screen").value);
+                console.log(`${value_}`);
+                if(isNaN(value_)){
+                    alert("Invalid input!");
+                }
+                else{
+                    value_--;
+                    if(value_ >= 0){
+                        $("#screen").val(`${value_}`);
+                    }
+                }
+            });
+            // SET VALUE
+            $("#setValue").click(function(event){
+                event.preventDefault();
+                var value_ = parseInt(document.getElementById("valueis").value);
+                console.log(`${value_}`);
+                if(isNaN(value_)){
+                    alert("Invalid input!");
+                }
+                else{
+                    $("#screen").val(`${value_}`);
+                }
+            });
+            // Counter Name
+            $("#counterName").click(function(event){
+                event.preventDefault();
+                var value_ = document.getElementById("counterNAME").value;
+                document.getElementById("Cname").innerHTML = value_;
+            });
+            // Show Hide
+            $("#showHide").click(function(){
+                var state = $(this).html();
+                console.log(`${state}`);
+                if(state == 'Hide'){
+                    $("#div_").hide();
+                    $("#showHide").html('Show');
+                }
+                else{
+                    $("#div_").show();
+                    $("#showHide").html('Hide');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="btn">
+        <button id="showHide">Hide</button>
+    </div>
+    <div class="counterBox" id="div_">
+        <p id="Cname">Counter</p>
+        <form id="myFrom">
+            <input type="text" id="screen" disabled="disabled">
+            <button id="increment" class="btns">+</button>
+            <button id="Decrement" class="btns">-</button> <br>
+            <button id="reset" class="btns">Reset</button><br>
+            <button id="setValue" class="btns">Start Value</button>
+            <input id="valueis" type="text"><br>
+            <button id="counterName" class="btns">Counter Name</button>
+            <input id="counterNAME" type="text">
+        </form>
+    </div>
+    </body>
+</html>
