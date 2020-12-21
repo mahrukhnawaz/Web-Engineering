@@ -1,0 +1,20 @@
+body{
+    background-color: lightgrey;
+    margin: 1% 10%;
+}
+nav{
+    border-radius: 5px;
+}
+input{
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.myinput{
+    background-color: rgb(46, 46, 46);
+}
+.mypadding{
+    margin-bottom: 2%;
+}
+.mybtn{
+    width: 80%;
+}
