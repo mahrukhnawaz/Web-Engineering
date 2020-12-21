@@ -1,0 +1,63 @@
+.mylogo{
+    width: 100px;
+    height: 80px;
+}
+.logo{
+    display: flex;
+}
+.row2{
+    background-color: #ebeff2;
+    padding: 1%;
+}
+.mynavmain{
+    display: flex;
+}
+.mynav{
+    background-color: #fefefe;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    width: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 25px;
+    text-align: center;
+}
+.mynav:hover{
+    cursor: pointer;
+}
+.myimg{
+    width: 93%;
+}
+h1{
+    color: #4094c9;
+}
+.mybtn{
+    margin: 5% 0%;
+}
+.dot {
+    height: 18px;
+    width: 18px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #71b5d3;
+    border-radius: 50%;
+    display: inline-block;
+}
+.div-icons{
+    margin-top: 3%;
+}
+.white-div{
+    margin: 2% 0%;
+}
+input{
+    background-color: rgb(54, 54, 54);
+    border-radius: 5px;
+    border: none;
+    padding: 2%;
+}
+.my-container{
+    padding: 1%;
+    text-align: right;
+}
